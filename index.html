@@ -25,6 +25,7 @@
 
 <body>
   <div id="top">
+    <button onclick="onVrViewLoad()" />
   </div>
   <div id="middle">
     <div id="vrview"></div>
@@ -34,7 +35,7 @@
   </div>
 
    <script type="javascript">
-      window.addEventListener('load', onVrViewLoad)
+      //window.addEventListener('load', onVrViewLoad)
       function onVrViewLoad() {
         console.log("asd");
         var vrView = new VRView.Player('#vrview', {
