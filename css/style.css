@@ -47,27 +47,28 @@ iframe {
   }
 
 
-#toggleplay {
-  float: left;
-  background: url('./../src/pause.svg');
-  width: 24px;
-  height: 24px;
-}
-
-  #toggleplay.paused {
-   background: url('./../src/play.svg');
+  #toggleplay {
+    float: left;
+    background: url('img/ic_pause_black_24dp.svg');
+    width: 24px;
+    height: 24px;
   }
 
-#togglemute {
-  float: right;
-  background: url('./../src/volumeup.svg');
-  width: 24px;
-  height: 24px;
-}
+    #toggleplay.paused {
+      background: url('img/ic_play_arrow_black_24dp.svg');
+    }
 
-  #togglemute.muted {
-    background: url('./../src/volumeoff.svg');
+  #togglemute {
+    float: right;
+    background: url('img/ic_volume_up_black_24dp.svg');
+    width: 24px;
+    height: 24px;
   }
+
+    #togglemute.muted {
+      background: url('img/ic_volume_off_black_24dp.svg');
+    }
+
 
 /* MOBILE */
 @media screen and (max-width: 700px) {
