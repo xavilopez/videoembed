@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+
+    <title>360 test</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+   <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+
+   <style>
+    #top {background-color: #677794; width: 100vw; height: 30vh;}
+    #middle {background-color: #ec8b29; width: 100vw; height: 40vh;}
+    #bot {background-color: #504456; width: 100vw; height: 30vh;}
+   </style>
+</head>
+
+<body>
+  <div id="top">
+  </div>
+  <div id="middle">
+    <div id="vrview"></div>
+
+  </div>
+  <div id="bot">
+  </div>
+
+   <script type="javascript">
+      window.addEventListener('load', onVrViewLoad)
+      function onVrViewLoad() {
+        var vrView = new VRView.Player('#vrview', {
+          video: 'link/to/video.mp4',
+          is_stereo: true
+        });
+      }
+   </script>
+
+</body>
+
+</html>
