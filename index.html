@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+   <link href="./css/style.css" rel="stylesheet" type="text/css">
+
    <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 
    <style>
@@ -25,36 +27,22 @@
 
 <body>
   <div id="top">
-    <button id="btnload">LOAD VIDEO<button/>
+    <button id="btnload">LOAD VIDEO</button>
   </div>
   <div id="middle">
     <div id="vrview"></div>
 
   </div>
   <div id="bot">
+    <div id="controls">
+     <div id="toggleplay" class="paused"></div>
+     <div id="togglemute"></div>
+   </div>
   </div>
 
   <!-- jQuery Version 1.11.1 -->
    <script src="js/jquery.js"></script>
-
-   <script>
-   $(function(){
-     $('#btnload').click(()=>{
-       onVrViewLoad();
-     });
-   })
-
-
-      //window.addEventListener('load', onVrViewLoad)
-      function onVrViewLoad() {
-        var vrView = new VRView.Player('#vrview', {
-          video: './src/videotest.mp4',
-          is_stereo: true
-        });
-      }
-
-
-   </script>
+   <script src="index.js"></script>
 
 </body>
 
